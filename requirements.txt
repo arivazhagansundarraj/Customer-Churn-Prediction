@@ -1,0 +1,17 @@
+# Core data science stack for the churn project.
+# Pinned to the minor versions this project was built and verified against
+# (Python 3.14, Windows). Loosen to >= if you need a wider support matrix.
+
+pandas~=3.0.6
+numpy~=2.5.3
+scikit-learn~=1.9.1
+matplotlib~=3.11.2
+seaborn~=0.13.2
+joblib~=1.6.0
+
+# Excel reader -- required because the dataset ships as .xlsx.
+openpyxl~=3.1.5
+
+# Optional: the gradient-boosted candidate. The workflow detects its absence and
+# benchmarks Logistic Regression + Random Forest only.
+xgboost~=3.4.1

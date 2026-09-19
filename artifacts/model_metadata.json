@@ -1,0 +1,78 @@
+{
+  "created_utc": "2026-09-19T17:59:54+00:00",
+  "model": "Logistic Regression",
+  "best_params": {
+    "solver": "liblinear",
+    "l1_ratio": "1.0",
+    "C": "0.23357214690901212"
+  },
+  "decision_threshold": {
+    "threshold": 0.4985,
+    "precision": 0.5216,
+    "recall": 0.8007,
+    "f1": 0.6317,
+    "rule": "max precision subject to recall >= 80%"
+  },
+  "cv_roc_auc": 0.8474,
+  "test_metrics_at_threshold": {
+    "roc_auc": 0.8454,
+    "pr_auc": 0.6542,
+    "recall": 0.8021,
+    "precision": 0.5068,
+    "f1": 0.6211,
+    "balanced_accuracy": 0.76,
+    "accuracy": 0.7402
+  },
+  "test_metrics_at_050": {
+    "roc_auc": 0.8454,
+    "pr_auc": 0.6542,
+    "recall": 0.8021,
+    "precision": 0.5068,
+    "f1": 0.6211,
+    "balanced_accuracy": 0.76,
+    "accuracy": 0.7402
+  },
+  "confusion_matrix_at_threshold": {
+    "true_negative": 743,
+    "false_positive": 292,
+    "false_negative": 74,
+    "true_positive": 300
+  },
+  "training_rows": 5634,
+  "test_rows": 1409,
+  "train_churn_rate": 0.2654,
+  "required_raw_columns": [
+    "gender",
+    "SeniorCitizen",
+    "Partner",
+    "Dependents",
+    "tenure",
+    "PhoneService",
+    "MultipleLines",
+    "InternetService",
+    "OnlineSecurity",
+    "OnlineBackup",
+    "DeviceProtection",
+    "TechSupport",
+    "StreamingTV",
+    "StreamingMovies",
+    "Contract",
+    "PaperlessBilling",
+    "PaymentMethod",
+    "MonthlyCharges",
+    "TotalCharges"
+  ],
+  "top_drivers": [
+    "tenure",
+    "Contract",
+    "InternetService",
+    "TotalCharges",
+    "PhoneService",
+    "PaymentMethod",
+    "OnlineSecurity",
+    "TechSupport",
+    "PaperlessBilling",
+    "SeniorCitizen"
+  ],
+  "random_state": 42
+}
